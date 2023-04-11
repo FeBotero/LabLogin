@@ -4,4 +4,6 @@
     <string name="email">Email</string>
     <string name="create_account">Create account</string>
     <string name="sign_in">Sign In</string>
+    <string name="config">Config</string>
+    <string name="about">About</string>
 </resources>
