@@ -6,4 +6,10 @@
     <string name="sign_in">Sign In</string>
     <string name="config">Config</string>
     <string name="about">About</string>
+    <string name="register">Register</string>
+    <string name="sing_in">Sing In</string>
+    <string name="logo">Logo</string>
+    <string name="user">User</string>
+    <string name="pass">Pass</string>
+    <string name="save">save</string>
 </resources>

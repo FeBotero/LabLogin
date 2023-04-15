@@ -11,6 +11,7 @@
         android:id="@+id/ivLogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:contentDescription="@string/logo"
         android:src="@drawable/logo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,6 +23,7 @@
         android:id="@+id/ivUser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:contentDescription="@string/user"
         android:src="@drawable/user"
         app:layout_constraintBottom_toBottomOf="@+id/etName"
         app:layout_constraintTop_toTopOf="@+id/etName"
@@ -29,6 +31,7 @@
         />
     <ImageView
         android:id="@+id/ivPass"
+        android:contentDescription="@string/pass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/key"
@@ -41,43 +44,52 @@
         android:id="@+id/etName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="@string/email"
-        android:textColor="#000000"
-        app:layout_constraintTop_toBottomOf="@+id/ivLogo"
-        android:width="300dp"
         android:layout_marginTop="150dp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:width="300dp"
+        android:hint="@string/email"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColor="#000000"
+        android:textColorHint="#757575"
         app:layout_constraintEnd_toEndOf="parent"
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivLogo" />
+
     <EditText
         android:id="@+id/etPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#000000"
+        android:layout_marginTop="10dp"
         android:width="300dp"
         android:hint="@string/password"
-        app:layout_constraintStart_toStartOf="parent"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColor="#000000"
+        android:textColorHint="#757575"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="10dp"
-        app:layout_constraintTop_toBottomOf="@+id/etName"
-        />
-    <com.google.android.material.checkbox.MaterialCheckBox
-        android:id="@+id/cbSave"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etName" />
+
+
+    <ProgressBar
+        android:id="@+id/progressbar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/etPassword"
-        app:layout_constraintStart_toStartOf="@+id/etPassword"
-        android:textColor="#000000"
-        android:text="save"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:visibility="gone"
+        android:layout_marginTop="20dp"
         />
+
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Register"
+        android:text="@string/register"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cbSave"
+        app:layout_constraintTop_toBottomOf="@+id/progressbar"
         android:layout_marginTop="10dp"
         android:width="350dp"
         app:cornerRadius="30dp"
@@ -89,7 +101,7 @@
         android:id="@+id/textGotoLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sing In"
+        android:text="@string/sing_in"
         app:layout_constraintTop_toBottomOf="@+id/btRegister"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
