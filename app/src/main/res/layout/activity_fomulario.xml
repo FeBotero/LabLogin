@@ -39,41 +39,26 @@
         android:textSize="20sp"
         android:height="50dp"
         />
-    <EditText
-        android:id="@+id/etgender"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="Enter your gender"
-        android:padding="10sp"
-        android:background="#DCDCDC"
-        app:layout_constraintTop_toBottomOf="@+id/tvLastName"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginTop="10dp"
-        android:width="350dp"
-        android:textSize="20sp"
-        android:height="50dp"
-        />
 
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btSave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Save"
-        app:layout_constraintTop_toBottomOf="@+id/etgender"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
         android:width="180dp"
         android:height="30dp"
-        android:textSize="20sp"
-        android:layout_marginTop="10dp"
+        android:hint="Save"
         android:textColorHint="@color/white"
-        />
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvLastName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="50dp"
+        tools:layout_editor_absoluteY="189dp" />
 
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btDisplau"
+        android:id="@+id/btDisplay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="Display Data"
