@@ -20,6 +20,7 @@ public class FormActivity extends AppCompatActivity {
     private  EditText mLname;
     private Button mButtonSave;
     private Button mButtonDisplay;
+    private Button mButtonHome;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +30,7 @@ public class FormActivity extends AppCompatActivity {
         mLname = findViewById(R.id.tvLastName);
         mButtonSave = findViewById(R.id.btSave);
         mButtonDisplay = findViewById(R.id.btDisplay);
+        mButtonHome = findViewById(R.id.btHome);
 
         mButtonSave.setEnabled(false);
         mLname.setEnabled(false);
@@ -80,6 +82,15 @@ public class FormActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 MyDataBaseHelper myDB = new MyDataBaseHelper(FormActivity.this);
+
+                Intent intent = new Intent(FormActivity.this,DisplayActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        mButtonHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
 
                 Intent intent = new Intent(FormActivity.this,HomeActivity.class);
                 startActivity(intent);
